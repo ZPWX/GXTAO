@@ -14,5 +14,8 @@ IO流：用于传输的流对象，用来在JVM和外部交换数据源之间传
 InputStream/OutputStream所有字节流输出/输出流的父类
     子类类名以父类类名作为引用
 FileInputStream/FileOutputStream 文件字节输入/输出流
-
+三个写方法：
+    write(int a):把字节a写进文件中
+    wirte(bye[] bs):把字节数组bs全部写出去
+    *write(byte[] bs,int off,int lenght):把字节数组中的一段写进去，具体由后两个参数决定。
 
