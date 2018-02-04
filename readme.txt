@@ -18,4 +18,7 @@ FileInputStream/FileOutputStream 文件字节输入/输出流
     write(int a):把字节a写进文件中
     wirte(bye[] bs):把字节数组bs全部写出去
     *write(byte[] bs,int off,int lenght):把字节数组中的一段写进去，具体由后两个参数决定。
-
+三个读方法：
+    int read():从文件中度一个字节，返回-1结束
+    int read(byte[] bs):从文件中读多个数组，直至读满。返回值为实际读到的字节数，以-1结束
+    int read(byte[] bs,int off,int length):从文件中读多个字节，放入数组中，返回值为实际读到字节数，以-1为结束
