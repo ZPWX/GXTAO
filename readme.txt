@@ -22,3 +22,10 @@ FileInputStream/FileOutputStream 文件字节输入/输出流
     int read():从文件中度一个字节，返回-1结束
     int read(byte[] bs):从文件中读多个数组，直至读满。返回值为实际读到的字节数，以-1结束
     int read(byte[] bs,int off,int length):从文件中读多个字节，放入数组中，返回值为实际读到字节数，以-1为结束
+IO编程的模式：
+    1.创建节点流
+    2.封装过滤流
+    3.读/写数据
+    4.关闭流
+DataInputStream/DataOutputStream 可以直接读写8种基本类型和字符串  readUTF()/writeUTF()
+BufferedInputStream/BufferedOutputStream 作用：缓冲，提高IO的效率
