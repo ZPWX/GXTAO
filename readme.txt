@@ -28,4 +28,17 @@ IO编程的模式：
     3.读/写数据
     4.关闭流
 DataInputStream/DataOutputStream 可以直接读写8种基本类型和字符串  readUTF()/writeUTF()
-BufferedInputStream/BufferedOutputStream 作用：缓冲，提高IO的效率
+BufferedInputStream/BufferedOutputStream作用：缓冲，提高IO的效率,主要用于输出上。
+    PrintStream:能写8种基本类型，同时具有缓冲
+    PiedInputStream:管道流，用于线程间传输数据
+    RanddomAccessFile:随机访问文件
+通过字符流可以处理字符的编解码问题
+字符的编解码：
+    当字符的解码方式和编码方式不统一时，会造成乱码
+字符流：读写文本文件，只能处理文本
+    Reader/Writer 字符流的父类
+    FileReader/FileWriter  文件字符流 节点流
+    BufferedReader/BufferedWriter=PrintWriter 缓冲流  过滤流
+    InputStreamReader/OutputStreamWriter  桥转换  在桥转换的时候指定编解码方式
+    readLine():阻塞方法，读到换行符结束
+
