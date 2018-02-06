@@ -41,4 +41,12 @@ BufferedInputStream/BufferedOutputStream作用：缓冲，提高IO的效率,主�
     BufferedReader/BufferedWriter=PrintWriter 缓冲流  过滤流
     InputStreamReader/OutputStreamWriter  桥转换  在桥转换的时候指定编解码方式
     readLine():阻塞方法，读到换行符结束
+对象序列化：将对象通过流传输
+    ObjectOutputStream/ObjectInputStream
+    只有实现了Serializable接口的对象才能序列化
+    不仅对象本身需要实现Serializable接口,对象的属性也需要实现该接口，因为存对象就是存属性。
+    用transient修饰的属性为临时属性，不参与序列化(如：二者存其一)
+属性发生修改：
+    流：记录对象的状态
+    clone()：对象的克隆，返回对象的属性
 
