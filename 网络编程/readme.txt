@@ -14,7 +14,8 @@
     传输层协议：
         TCP：传输控制协议  面向连接的 可靠的  效率低（一对一）
         UDP：用户数据报协议  非面向连接的  不可靠的  效率高 （广播）
-    JAVA中基于socket编程
+    *TCP编程
+        JAVA中基于socket编程
         socket：编程模型（套接字）
         例如：Ip：电话号码；Port：分机号；socket：电话机;->Ip+Port=Socket(唯一)
     客户端<---->服务器
@@ -29,3 +30,11 @@
         3>传输数据
         4>关闭流
     服务器为多个客户端提供服务-->同时提供服务-->多线程
+    *UDP编程
+        JAVA中基于socket编程
+        DatagramSocket/DatagramPacket
+        同时具有信和信封。receive/send
+        TCP和UDP都是协议，端口只与协议有关。所以在不同协议同一端口不冲突
+        getLocalHost:本台主机
+    *URL编程
+        
